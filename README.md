@@ -9,7 +9,7 @@ DVORAK
 ```
 
 ### Lower
-Numbers and Directions
+Numbers, Directions and Bluetooth
 ```
 |  `  |     |     |     |     |      |   |      |  HM | PG DWN | PG UP | END |     |
 |  1  |  2  |  3  |  4  |  5  |  6   |   |  7   |  8  |    9   |   0   |  -  |  \  |
