@@ -1,4 +1,4 @@
-# Layout
+# Layers
 ### Main
 DVORAK
 ```
@@ -28,5 +28,6 @@ Symbols, Function keys and Media
 
 # Notes
 
-Shift click: Left hand Shift can be accessed with left hand layer (press both with thumb).
-Shift insert: Hold Shift and right hand layer with right thumb, and hit Insert with left pinky, first row.
+Shift Click: Left hand Shift can be accessed with Lower layer (press both with left thumb).
+
+Shift Insert: Hold Shift and Raise layer with right thumb, and hit Insert with left pinky, first row.
