@@ -32,10 +32,10 @@
 
                 plover_layer {
                         bindings = <
-   &trans &kp GRAVE &kp W &kp E &kp R &kp T     &kp Y &kp U  &kp I     &kp O   &kp P    &trans
-   &trans &kp A &kp S &kp D &kp F &kp G     &kp H &kp J  &kp K     &kp L   &kp SEMI &trans
-   &trans &kp Z &kp X &kp C &kp V &kp B     &kp N &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans
-                 &mo 3  &kp C  &kp V       &kp M  &kp COMMA  &mo 4
+   &LS(INS)  &kp GRAVE &kp W  &kp E &kp R &kp T     &kp Y &kp U     &kp I     &kp O   &kp P     &kp LBKT
+   &LC(C)    &kp A     &kp S  &kp D &kp F &kp G     &kp H &kp J     &kp K     &kp L   &kp SEMI  &kp SQT
+   &kp LSHFT &none     &none  &none &none &none     &none &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT &none
+                            &mo 3  &kp C  &kp V     &kp N &kp M     &mo 4
                         >;
                 };
 
