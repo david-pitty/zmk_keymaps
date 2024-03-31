@@ -20,8 +20,8 @@
                     <&kp KP_N1 &kp KP_N6 &kp KP_N0>,
                     <&macro_release>,
                     <&kp RALT>;
-            }
-        },
+            };
+        };
         keymap {
                 compatible = "zmk,keymap";
 
