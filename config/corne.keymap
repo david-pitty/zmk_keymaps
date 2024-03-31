@@ -64,6 +64,7 @@
                     <&kp KP_N1 &kp KP_N6 &kp KP_N3>,
                     <&macro_release>,
                     <&kp RALT>;
+            };
             ACC_N: ACC_N {
                 compatible = "zmk,behavior-macro";
                 #binding-cells = <0>;
