@@ -9,6 +9,19 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+        macros {
+            ACC_A: ACC_A {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings =
+                    <&macro_press>,
+                    <&kp RALT>,
+                    <&macro_tap>,
+                    <&kp KP_N1 &kp KP_N6 &kp KP_N0>,
+                    <&macro_release>,
+                    <&kp RALT>;
+            }
+        },
         keymap {
                 compatible = "zmk,keymap";
 
@@ -51,7 +64,7 @@
                 raise_layer {
                         bindings = <
    &kp PSCRN &kp INS  &trans  &trans  &trans &trans     &trans &trans   &kp LPAR &kp RPAR &kp EQUAL &kp DEL
-   &kp TILDE &trans   &trans  &trans  &trans &trans     &trans &kp LBRC &kp RBRC &kp LBKT &kp RBKT  &kp PIPE
+   &kp TILDE &ACC_A   &trans  &trans  &trans &trans     &trans &kp LBRC &kp RBRC &kp LBKT &kp RBKT  &kp PIPE
    &trans    &kp F2   &kp F3  &kp F4  &kp F5 &kp F6     &kp F7 &kp F8   &kp F9   &kp F10  &kp F11   &kp F12
                                &trans &mo 5  &trans     &trans &trans &trans
                         >;
