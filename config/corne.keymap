@@ -87,6 +87,17 @@
                     <&macro_release>,
                     <&kp RALT>;
             };
+            ACC_Ex: ACC_Ex {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings =
+                    <&macro_press>,
+                    <&kp RALT>,
+                    <&macro_tap>,
+                    <&kp KP_N1 &kp KP_N7 &kp KP_N3>,
+                    <&macro_release>,
+                    <&kp RALT>;
+            };
         };
         keymap {
                 compatible = "zmk,keymap";
@@ -120,10 +131,10 @@
 
                 raise_layer {
                         bindings = <
-   &kp PSCRN &trans   &trans  &trans  &kp KP_NUMLOCK  &trans     &trans &ACC_Q   &kp LPAR &kp RPAR &kp EQUAL &kp DEL
-   &kp TILDE &ACC_A   &ACC_O  &ACC_E  &ACC_U          &ACC_I     &ACC_N &kp LBRC &kp RBRC &kp LBKT &kp RBKT  &kp PIPE
-   &trans    &kp F2   &kp F3  &kp F4  &kp F5          &kp F6     &kp F7 &kp F8   &kp F9   &kp F10  &kp F11   &kp F12
-                              &trans  &mo 4           &trans     &trans &trans   &trans
+   &kp PSCRN &trans   &trans  &trans  &kp KP_NUMLOCK  &trans     &ACC_Ex &ACC_Q   &kp LPAR &kp RPAR &kp EQUAL &kp DEL
+   &kp TILDE &ACC_A   &ACC_O  &ACC_E  &ACC_U          &ACC_I     &ACC_N  &kp LBRC &kp RBRC &kp LBKT &kp RBKT  &kp PIPE
+   &trans    &kp F2   &kp F3  &kp F4  &kp F5          &kp F6     &kp F7  &kp F8   &kp F9   &kp F10  &kp F11   &kp F12
+                              &trans  &mo 4           &trans     &trans  &trans   &trans
                         >;
                 };
 
